@@ -1,23 +1,98 @@
 aid: dalrymple-bay-infrastructure
+
 name: Dalrymple Bay Infrastructure
-description: 'Dalrymple Bay Infrastructure is a company surfaced via the API Evangelist harvest backlog
-  (source: australia-apidays-2026) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Dalrymple Bay Infrastructure (DBI) is an ASX-listed Australian infrastructure company whose
+  foundation asset is the Dalrymple Bay Terminal (DBT) in Queensland, described by DBI as the world''s
+  largest metallurgical coal export facility and a global gateway from the Bowen Basin. DBI aims to provide
+  safe and efficient terminal infrastructure and services for producers and consumers of Australian coal
+  exports, delivering value to securityholders through stable cashflows and investment in capacity
+  expansion. Its website publishes investor relations material (ASX announcements, reports, distributions),
+  terminal access and regulatory information, sustainability and corporate governance documents. No public
+  developer API, documentation or developer portal was found on its site.'
+
 url: https://raw.githubusercontent.com/api-evangelist/dalrymple-bay-infrastructure/refs/heads/main/apis.yml
+
+image: https://dbinfrastructure.com.au/wp-content/uploads/2023/10/logo.svg
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Infrastructure
+- Ports
+- Coal Export
+- Australia
+- ASX Listed
+- Logistics
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/dalrymple-bay-infrastructure-hosts.yml
+- type: Vendors
+  url: vendors/dalrymple-bay-infrastructure-vendors.yml
+- type: DomainSecurity
+  url: security/dalrymple-bay-infrastructure-domain-security.yml
 - type: Website
   url: https://dbinfrastructure.com.au/
+- type: About
+  url: https://dbinfrastructure.com.au/about/overview/
+- type: InvestorRelations
+  url: https://investors.dbinfrastructure.com.au/
+- type: Support
+  url: https://dbinfrastructure.com.au/contact/
+- type: PrivacyPolicy
+  url: https://dbinfrastructure.com.au/privacy-policy/
+- type: Disclaimer
+  url: https://dbinfrastructure.com.au/disclaimer/
+- type: Login
+  url: https://dbinfrastructure.com.au/login/
+  description: Debt investor portal login (linked from the site navigation as "Debt Investors").
+- type: SignUp
+  url: https://dbinfrastructure.com.au/register/
+  description: Debt investor portal registration (linked from the site navigation as "Debt Investors").
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website, About, InvestorRelations, Support (contact), PrivacyPolicy, Disclaimer and debt-investor Login/SignUp verified live 2026-10-21 (Login/SignUp per pre-flight site_links); no developer portal, documentation, API reference, blog, GitHub or pricing page is published.
+  evidence:
+  - url: https://dbinfrastructure.com.au/
+    status: 200
+  - url: https://dbinfrastructure.com.au/about/overview/
+    status: 200
+  - url: https://investors.dbinfrastructure.com.au/
+    status: 200
+  - url: https://dbinfrastructure.com.au/contact/
+    status: 200
+  - url: https://dbinfrastructure.com.au/privacy-policy/
+    status: 200
+  - url: https://dbinfrastructure.com.au/disclaimer/
+    status: 200
+  - url: https://dbinfrastructure.com.au/wp-content/uploads/2023/10/logo.svg
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

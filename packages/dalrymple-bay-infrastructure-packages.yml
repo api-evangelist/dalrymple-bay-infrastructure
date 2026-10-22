@@ -1,0 +1,5 @@
+name: Dalrymple Bay Infrastructure packages
+generated: '2026-10-21'
+method: none
+note: No first-party SDK, client library or CLI found. npm search for "dalrymple bay" returned only unrelated packages, PyPI /pypi/dalrymple-bay/json returned 404, and GitHub repository search for "dbinfrastructure" returned one unrelated repo (SpotifyDBInfrastructure). The provider publishes no developer API (checked 2026-10-21).
+packages: []

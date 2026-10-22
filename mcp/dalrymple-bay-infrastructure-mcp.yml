@@ -1,0 +1,17 @@
+generated: '2026-10-21'
+method: none
+status: none
+note: >-
+  No official hosted or local MCP server was found for Dalrymple Bay Infrastructure. Pre-flight
+  contract discovery (2026-10-21) on dbinfrastructure.com.au and investors.dbinfrastructure.com.au
+  reported mcp/openapi/asyncapi/graphql all absent, and a web search for a DBI API or MCP server
+  returned nothing related. No OpenAPI exists in this repo, so no candidate tool list can be derived.
+tools: []
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+evidence:
+- url: https://dbinfrastructure.com.au/
+  status: 200
+  note: Company website; no developer portal, API docs or MCP server linked.

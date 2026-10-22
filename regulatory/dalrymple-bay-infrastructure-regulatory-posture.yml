@@ -1,0 +1,30 @@
+generated: '2026-10-21'
+method: none
+source:
+  - https://dbinfrastructure.com.au/privacy-policy/
+  - https://dbinfrastructure.com.au/disclaimer/
+signals: {}
+pages_checked:
+  - url: https://dbinfrastructure.com.au/privacy-policy/
+    http_status: 200
+    fetched: '2026-10-21'
+    note: >-
+      A short website-only privacy notice (collection via cookies and online forms, purposes,
+      legal bases). It does not mention access or correction rights, retention periods,
+      subprocessors or overseas disclosure, breach notification, Global Privacy Control, AI or
+      accessibility, so no catalog signal is recorded.
+  - url: https://dbinfrastructure.com.au/disclaimer/
+    http_status: 200
+    fetched: '2026-10-21'
+    note: Website disclaimer; it does not address any regulatory-posture signal.
+  - url: https://dbinfrastructure.com.au/corporate-governance/reports-documents/
+    http_status: 200
+    fetched: '2026-10-21'
+    note: >-
+      Lists corporate governance PDFs (an ASX Disclosure Policy, a Modern Slavery Statement and
+      a Code of Conduct). These are securities-law and corporate documents, outside the
+      vocabulary of API and data regulatory signals, and were not recorded as signals.
+notes: >-
+  The dossier's legal_pages was null; the pages above were found from the homepage footer and
+  navigation. Dalrymple Bay Infrastructure is an ASX-listed coal export terminal operator with no
+  public API.

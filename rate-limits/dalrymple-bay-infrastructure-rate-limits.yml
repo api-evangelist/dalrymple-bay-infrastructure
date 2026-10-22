@@ -1,0 +1,6 @@
+name: Dalrymple Bay Infrastructure rate limits
+generated: '2026-10-21'
+method: none
+limit_count: 0
+note: No public API exists, so no rate limits are documented (checked dbinfrastructure.com.au and investors.dbinfrastructure.com.au, 2026-10-21).
+limits: []
